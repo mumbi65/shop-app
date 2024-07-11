@@ -1,11 +1,14 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const ProductCard = ({product}) => {
+const SearchResult = () => {
 
+    const location = useLocation()
+    const {product} = location.state
+    
     return(
         <>
-            <div className="card">
+        <div className="card">
                 <img src={product.images[0]} className="card-img-top custom-img" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{product.title}</h5>
@@ -19,4 +22,4 @@ const ProductCard = ({product}) => {
     )
 }
 
-export default ProductCard
+export default SearchResult

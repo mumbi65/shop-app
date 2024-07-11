@@ -7,6 +7,8 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { createBrowserRouter } from 'react-router-dom';
 import { RouterProvider } from 'react-router-dom';
 import ProductDetails from './components/productcontent.jsx';
+import ProductCard from './components/productcard.jsx';
+import SearchResult from './components/searchresults.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: 'productcontent',
     element:<ProductDetails/>
+  },
+  {
+    path: 'productcard',
+    element:<ProductCard/>
+  },
+  {
+    path: '/searchresults',
+    element:<SearchResult/>
   }
 ])
 

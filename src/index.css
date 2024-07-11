@@ -71,3 +71,8 @@ button:focus-visible {
   max-height: 300px;
   object-fit: contain;
 }
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
